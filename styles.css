@@ -6,9 +6,15 @@
     scroll-behavior: smooth;
 }
 
+:root {
+    --bg: #131313;
+    --lilac: #7F7FD5;
+    --baby-blue: #86A8E7;
+}
+
 /* nav */
 .navbar {
-    background: hsl(0, 0%, 0%);
+    background: black;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -31,7 +37,7 @@
 }
 
 #navbar-logo {
-    background: #7F7FD5;
+    background: var(--lilac);
     background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
     background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
     background-size: 100%;
@@ -86,18 +92,18 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #86A8E7;
+    background: var(--baby-blue);
     color: white;
     transition: all 0.3s ease;
-    box-shadow: inset 0 0 0 0 #7F7FD5;
+    box-shadow: inset 0 0 0 0 var(--lilac);
 }
 
 .button:hover {
-    box-shadow: inset 0 0 0 50px #7F7FD5;
+    box-shadow: inset 0 0 0 50px var(--lilac);
 }
 
 .navbar-links:hover {
-    color: #86A8E7;
+    color: var(--baby-blue);
     transition: all 0.3s ease;
 }
 
@@ -112,7 +118,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1300px;
+    max-width: 1000px;
     margin: 0 auto;
     height: 100%;
     text-align: center;
@@ -141,5 +147,66 @@
 }
 
 .highlight {
-    border-bottom: 4px solid #86A8E7;
+    border-bottom: 4px solid var(--baby-blue);
+}
+
+/* about */
+.main {
+    background-color: black;
+    padding: 12rem 0;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.main-content {
+    color: var(--bg);
+    width: 100%;
+}
+
+.main-content h1 {
+    color: var(--lilac);
+    font-size: 2rem;
+    margin-bottom: 32px;
+}
+
+.main-content h2 {
+    font-size: 4rem;
+    background: #7F7FD5;
+    background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);
+    background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main .button {
+    font-size: 36px;
+    margin-top: 30px;
+    width: 280px;
+}
+
+.main-img-container {
+    text-align: center;
+}
+
+.main-img-card {
+    margin: 10px;
+    height: 500px;
+    width: 500px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
