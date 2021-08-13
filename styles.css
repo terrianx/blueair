@@ -127,7 +127,7 @@
 
 .intro-heading {
     color: black;
-    font-size: 80px;
+    font-size: 120px;
     margin-bottom: 30px;
 }
 
@@ -152,7 +152,7 @@
 
 /* about */
 .main {
-    background-color: black;
+    background-color: var(--bg);
     padding: 12rem 0;
 }
 
@@ -209,4 +209,86 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* products */
+.products {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10rem 0;
+}
+
+.products h1 {
+    color: var(--lilac);
+    margin-bottom: 24px;
+    font-size: 48px;
+}
+
+.products p {
+    font-size: 36px;
+    margin-bottom: 24px;
+    text-align: ;
+}
+
+.products-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.products-card {
+    background-image: url("images/clouds.jpg");
+    background-size: cover;
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.products-card-a {
+    background-image: url("images/siberia.jpg");
+}
+
+.products-card-b {
+    background-image: url("images/iceland.jpg");
+}
+
+.products-card-c {
+    background-image: url("images/africa.jpg");
+}
+
+.products-card-d {
+    background-image: url("images/acadia.jpg");
+}
+
+.products-card h2 {
+    text-align: center;
+}
+
+.products-card p {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+.products-card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.products .button {
+    font-size: 20px;
+    width: 120px;
+    height: 50px;
 }
