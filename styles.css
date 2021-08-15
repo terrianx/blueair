@@ -197,10 +197,6 @@
     width: 280px;
 }
 
-.main-img-container {
-    text-align: center;
-}
-
 .main-img-card {
     margin: 10px;
     height: 500px;
@@ -241,7 +237,6 @@
 }
 
 .products-card {
-    background-image: url("images/clouds.jpg");
     background-size: cover;
     margin: 10px;
     height: 425px;
@@ -292,3 +287,58 @@
     width: 120px;
     height: 50px;
 }
+
+/* order */
+.order {
+    background-color: white;
+    padding: 12rem 0;
+}
+
+.order-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.order-content {
+    color: var(--bg);
+    width: 100%;
+}
+
+.order-content h1 {
+    color: var(--lilac);
+    font-size: 2rem;
+    margin-bottom: 32px;
+}
+
+.order-content h2 {
+    font-size: 4rem;
+    background: #7F7FD5;
+    background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);
+    background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.order .button {
+    font-size: 36px;
+    margin-top: 30px;
+    width: 280px;
+}
+
+.order-img-card {
+    margin: 10px;
+    height: 500px;
+    width: auto;
+    border-radius: 4px;
+}
+
