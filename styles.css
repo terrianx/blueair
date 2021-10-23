@@ -13,7 +13,7 @@
 :root {
     --bg: #131313;
     --lilac: #7F7FD5;
-    --baby-blue: #caced4;
+    --baby-blue: #5c9dff;
     --glass: hsla(0,100%,100%,0.8);
 }
 
@@ -22,13 +22,15 @@
 /* nav */
 nav {
     align-items: center;
-    background-color: var(--glass);
+    background-color: white;
     display: grid;
-    /* filter: blur(10px); */
-    grid: 1fr / 1fr 1fr 1fr;
-    padding: 20px 10%;
+    justify-self: center;
+    grid: 1fr / 120px 1fr 1fr;
+    left: 0;
+    right: 0;
+    margin: 16px;
+    padding: 8px;
     position: fixed;
-    width: 100%;
     z-index: 10;
 }
 
@@ -41,25 +43,54 @@ nav {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    font-size: 30px;
-    justify-self: left;
+    font-size: 20px;
+    margin: 0 10px;
 }
 
 .nav-links-container {
+    align-items: center;
     display: grid;
-    grid: 1fr / 1fr 1fr 1fr;
-    justify-self: center;
+    grid: 1fr / auto auto auto;
+    justify-self: left;
 }
 
 .nav-link {
     color: black;
-    font-size: 20px;
+    font-size: 16px;
+    margin: 0 30px;
+}
+
+.nav-link:after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;;
+    background-color: black;
+    transition: 300ms;
+}
+
+.nav-link:hover::after {
+    width: 100%;
 }
 
 .nav-order-btn {
     color: var(--lilac);
     font-size: 20px;
     justify-self: right;
+    margin: 0 10px;
+}
+
+.nav-order-btn:after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;;
+    background-color: var(--lilac);
+    transition: 300ms;
+}
+
+.nav-order-btn:hover:after {
+    width: 100%;
 }
 
 nav a {
@@ -69,5 +100,5 @@ nav a {
 /* main */
 header {
     background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);;
-    padding: 800px 20%;
+    padding: 80px 20px;
 }
