@@ -125,10 +125,32 @@ nav a { text-decoration: none }
     /* color */
     --links: black;
     background-color: white;
-    opacity: 0.9;
+    opacity: 0.95;
     box-shadow: 0 2px 3px hsla(0, 34%, 0%, 0.5);
     /* other */
     transition: 300ms;
+}
+
+/* fade animation */
+nav {
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 /* header */
@@ -146,6 +168,28 @@ header {
     /* layout */
     /* max-width: 1200px; */
     width: 100%
+}
+
+/* fade animation */
+header {
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 .header-intro {
@@ -197,7 +241,7 @@ main {
     /* layout */
     display: grid;
     grid: auto / auto auto;
-    padding-bottom: 400px;
+    /* padding-bottom: 100px; */
 }
 
 /* about */
@@ -242,7 +286,7 @@ main a {
 
 .about-link {
     /* layout */
-    width: 95px;
+    width: 93px;
 }
 
 .about-link:after {
@@ -265,4 +309,61 @@ main a {
     padding: 0;
     width: 100%;
     justify-self: right;
+}
+
+/* footer */
+footer {
+    /* layout */
+    display: grid;
+    grid: auto auto / auto;
+    padding: 40px 60px;
+}
+
+.footer-container {
+    /* layout */
+    display: grid;
+    grid: auto / 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 40px;
+    justify-content: center;
+}
+
+footer .logo { font-size: 24px }
+
+.footer-items-container {
+    /* layout */
+    align-content: top;
+    justify-content: center;
+}
+
+.footer-title {
+    /* layout */
+    padding-bottom: 10px;
+    /* color */
+    color: var(--lilac);
+    /* text */
+    font-size: 20px;
+}
+
+footer ul { list-style-type: none }
+
+footer a {
+    /* color */
+    color: black;
+    /* text */
+    text-decoration: none;
+    /* other */
+    transition: 300ms;
+}
+
+footer a:hover {
+    /* color */
+    color: var(--lilac);
+    /* other */
+    transition: 300ms;
+}
+
+.copyright {
+    /* layout */
+    display: block;
+    justify-self: center;
 }
