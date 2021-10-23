@@ -2,15 +2,20 @@
 // === js file for index.hmtl ===
 // ==============================
 
-// changes color of nav when scrolling past intro
-const nav = document.querySelector("nav");
-const section = document.getElementById("logo");
+// alerts user of call
+let callBtn = function () {
+    alert("Ring Ring Ring Ring");
+}
 
-const sectionOptions = {
-    rootMargin: "-200px"
+// changes color of nav when scrolling past intro
+let nav = document.querySelector("nav");
+let section = document.getElementById("logo");
+
+let sectionOptions = {
+    rootMargin: "-180px"
 };
 
-const sectionObserver = new IntersectionObserver
+let sectionObserver = new IntersectionObserver
     (function(entries, sectionObserver) {
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
@@ -22,3 +27,13 @@ const sectionObserver = new IntersectionObserver
     }, sectionOptions);
 
 sectionObserver.observe(section);
+
+// clears email input
+let clearEmail = function () {
+    document.getElementById("why-input").value = "";
+}
+
+// alerts user they joined email list
+let joinBtn = function () {
+    alert("Successfully joined email list!");
+}

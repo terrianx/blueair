@@ -21,7 +21,7 @@
             <a href="#" class="nav-link">Products</a>
         </div>
         <div class="nav-btn-container">
-            <a href="#" class="nav-btn">Call</a>
+            <a href="#" class="nav-btn" onclick="callBtn()">Call</a>
             <a href="#order" class="nav-btn">Order</a>
         </div>
     </nav>
@@ -34,7 +34,9 @@
                 Breathe
                 <br>easy with</br> 
                 <div id="logo" class="logo">BlueAir</div>
-                <a href="#">Explore</a>
+                <div class="header-btn">
+                    <a href="#">Explore</a>
+                </div>
             </div>
         </div>
     </header>
@@ -64,6 +66,20 @@
                     sourcing techniques.
                 </p>
                 <div class="about-link"><a href="#">Learn more</a></div>
+            </div>
+        </div>
+        <!-- why BlueAir -->
+        <div id="why" class="why-container">
+            <div class="why-title">Why BlueAir?</div>
+            <p>BlueAir has been carbon neutral since 2000.
+                By supporting us you contribute to the greater
+                good cause of combatting climate change. Join
+                our email list to stay updated:
+            </p>
+            <div class="email-container">
+                <p class="why-email">Email:</p>
+                <input type="text" id="why-input" class="why-input">
+                <div class="why-btn"><a href="#why" onclick="clearEmail(), joinBtn()">Join</a></div>
             </div>
         </div>
     </main>
