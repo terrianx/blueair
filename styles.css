@@ -180,13 +180,21 @@ header a:after {
 
 header a:hover:after { width: 0 }
 
-/* about */
-.about-container {
+/* main */
+main {
     /* layout */
-    margin-top: 100px;
-    padding: 80px;
     display: grid;
-    grid: auto / auto auto;
+    grid: 1fr / auto auto;
+}
+
+/* about */
+.main-container {
+    /* layout */
+    align-items: center;
+    margin-top: 60px;
+    padding: 40px 60px;
+    display: grid;
+    grid: auto / 1fr 1fr;
     width: 100%;
     /* color */
     background-color: white;
@@ -194,25 +202,50 @@ header a:hover:after { width: 0 }
     font-size: 18px;
 }
 
-.about-text-container {
+.main-text-container {
     /* layout */
-    padding: 40px;
+    padding: 0 0 0 40px;
     justify-self: left;
 }
 
 #about {
     /* layout */
-    padding-bottom: 20px;
     /* color */
     color: var(--baby-blue);
     /* text */
-    font-size: 36px;
+    font-size: 32px;
 }
+
+main p { padding: 16px 0 }
+
+main a {
+    /* layout */
+    /* color */
+    color: var(--baby-blue);
+    /* text */
+    font-size: 18px;
+    text-decoration: none;
+}
+
+main a:after {
+    /* layout */
+    width: 90px;
+    height: 1px;
+    display: block;
+    /* color */
+    background-color: var(--baby-blue);
+    /* text */
+    content: '';
+    /* other */
+    transition: 300ms;
+}
+
+main a:hover:after { width: 0 }
 
 .about-img {
     /* layout */
-    padding: 40px;
-    max-width: 500px;
+    padding: 0;
+    min-width: 200px;
     width: 100%;
     justify-self: right;
 }
