@@ -34,6 +34,7 @@
 
 /* nav */
 nav {
+    --links: white;
     /* layout */
     align-items: center;
     display: grid;
@@ -47,8 +48,9 @@ nav {
     position: fixed;
     z-index: 10;
     /* color */
-    background-color: white;
-    box-shadow: 0 2px 3px hsla(0, 34%, 0%, 0.5);
+    background-color: transparent;
+    /* other */
+    transition: 300ms;
 }
 
 .nav-links-container {
@@ -63,7 +65,7 @@ nav {
     /* layout */
     margin: 0 30px;
     /* color */
-    color: black;
+    color: var(--links);
     /* text */
     font-size: 18px;
 }
@@ -74,7 +76,7 @@ nav {
     height: 1px;
     display: block;;
     /* color */
-    background-color: black;
+    background-color: var(--links);
     /* text */
     content: '';
     /* other */
@@ -118,6 +120,16 @@ nav {
 .nav-btn:hover:after { width: 100% }
 
 nav a { text-decoration: none }
+
+.nav-scrolled {
+    /* color */
+    --links: black;
+    background-color: white;
+    opacity: 0.9;
+    box-shadow: 0 2px 3px hsla(0, 34%, 0%, 0.5);
+    /* other */
+    transition: 300ms;
+}
 
 /* header */
 header {
@@ -167,7 +179,7 @@ header a {
 
 header a:after {
     /* layout */
-    width: 38%;
+    width: 40%;
     height: 1px;
     display: block;
     /* color */
@@ -184,17 +196,17 @@ header a:hover:after { width: 0 }
 main {
     /* layout */
     display: grid;
-    grid: 1fr / auto auto;
+    grid: auto / auto auto;
+    padding-bottom: 400px;
 }
 
 /* about */
 .main-container {
     /* layout */
     align-items: center;
-    margin-top: 60px;
     padding: 40px 60px;
     display: grid;
-    grid: auto / 1fr 1fr;
+    grid: 400px / 1fr 1fr;
     width: 100%;
     /* color */
     background-color: white;
@@ -204,6 +216,8 @@ main {
 
 .main-text-container {
     /* layout */
+    display: grid;
+    grid: auto auto auto auto / 1fr;
     padding: 0 0 0 40px;
     justify-self: left;
 }
@@ -218,8 +232,7 @@ main {
 
 main p { padding: 16px 0 }
 
-main a {
-    /* layout */
+main a { 
     /* color */
     color: var(--baby-blue);
     /* text */
@@ -227,9 +240,14 @@ main a {
     text-decoration: none;
 }
 
-main a:after {
+.about-link {
     /* layout */
-    width: 90px;
+    width: 95px;
+}
+
+.about-link:after {
+    /* layout */
+    width: 100%;
     height: 1px;
     display: block;
     /* color */
@@ -240,12 +258,11 @@ main a:after {
     transition: 300ms;
 }
 
-main a:hover:after { width: 0 }
+.about-link:hover:after { width: 0 }
 
 .about-img {
     /* layout */
     padding: 0;
-    min-width: 200px;
     width: 100%;
     justify-self: right;
 }
