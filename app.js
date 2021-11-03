@@ -12,7 +12,7 @@ let nav = document.querySelector("nav");
 let section = document.getElementById("logo");
 
 let sectionOptions = {
-    rootMargin: "-180px"
+    rootMargin: "-250px"
 };
 
 let sectionObserver = new IntersectionObserver

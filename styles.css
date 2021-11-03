@@ -159,6 +159,7 @@ nav {
 header {
     /* color */
     background-color: white;
+    padding-bottom: 40px;
 }
 
 .header-container {
@@ -169,8 +170,10 @@ header {
 
 .header-img {
     /* layout */
-    /* max-width: 1200px; */
-    width: 100%
+    justify-self: center;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
 
 /* fade animation */
@@ -256,6 +259,7 @@ main {
     display: grid;
     grid: auto auto / auto auto;
     justify-content: center;
+    transition: 300ms;
 }
 
 /* about */
@@ -320,6 +324,8 @@ main a {
     /* layout */
     padding: 0;
     width: 100%;
+    min-width: 200px;
+    max-width: 300px;
     justify-self: right;
 }
 
@@ -379,11 +385,31 @@ main a {
 
 .why-btn:hover:after { width: 0 }
 
+/* responsiveness */
+@media only screen and (max-width: 1200px) {
+    main {
+        transition: 300ms;
+    }
+
+    .main-container {
+        grid: 1fr 1fr / 1fr;
+    }
+
+    .main-text-container {
+        justify-self: center;
+    }
+
+    .about-img {
+        justify-self: center;
+    }
+}
+
 /* footer */
 footer {
     /* layout */
     display: grid;
     grid: auto auto / auto;
+    margin-top: 100px;
     padding: 40px 60px;
 }
 
