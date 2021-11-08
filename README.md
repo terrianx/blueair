@@ -8,6 +8,8 @@ Author: ytxpk
 
 Intro: A single page website for a mock company that sells air. 
 
+Link: https://yu-xiao-blue-air.netlify.app/
+
 Background: A website created to practice HTML, CSS, and JS and learn new frontend skills. Began in July 2021. I focused on UI UX design for this website by adding animations to improve user experience. 
 
 Features: 
