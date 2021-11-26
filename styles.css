@@ -279,9 +279,10 @@ header {
 
 .header-intro {
     /* layout */
-    align-self: center;
     position: absolute;
-    justify-self: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     justify-items: center;
     padding: 40px;
     /* color */
