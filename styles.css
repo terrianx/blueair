@@ -255,6 +255,13 @@ header a:after {
 
 header a:hover:after { width: 0 }
 
+/* responsiveness */
+@media only screen and (max-width: 400px) {
+    .header-intro {
+        background-color: green;
+    }
+}
+
 /* main */
 main {
     /* layout */
@@ -273,7 +280,6 @@ main {
     display: grid;
     grid: 400px / 1fr 1fr;
     width: 100%;
-    /* color */
     /* text */
     font-size: 18px;
 }
@@ -334,9 +340,7 @@ main a {
 
 /* responsiveness */
 @media only screen and (max-width: 1200px) {
-    .main-container {
-        grid: 1fr 1fr / 1fr;
-    }
+    .main-container { grid: 1fr 1fr / 1fr }
 
     .main-text-container {
         /* layout */
@@ -345,9 +349,7 @@ main a {
         max-width: 300px;
     }
 
-    .about-img {
-        justify-self: center;
-    }
+    .about-img { justify-self: center }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -371,6 +373,12 @@ main a {
 }
 
 @media only screen and (max-width: 400px) {
+    .main-container {
+        grid: min-content min-content / 1fr;
+        row-gap: 20px;
+        padding: 0 60px;
+    }
+
     .about-link { 
         /* layout */
         width: 100%;
