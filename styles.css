@@ -32,7 +32,12 @@
     font-size: 20px;
 }
 
-/* nav */
+
+
+/* ============================= */
+/* ============ nav ============ */
+/* ============================= */
+
 nav {
     --links: white;
     --btn: white;
@@ -156,7 +161,7 @@ nav, .mobile-nav {
 }
 
 .mobile-nav {
-    background-color: white;
+    /* layout */
     top: 0;
     left: 0;
     right: 0;
@@ -166,6 +171,8 @@ nav, .mobile-nav {
     z-index: 10;
     display: none;
     grid: auto auto auto / auto auto;
+    /* color */
+    background-color: white;
     opacity: 0.95;
     box-shadow: 0 2px 3px hsla(0, 34%, 0%, 0.5);
     /* other */
@@ -173,6 +180,7 @@ nav, .mobile-nav {
 }
 
 .mobile-nav-menu {
+    /* layout */
     margin-right: 6px;
     justify-self: right;
     display: grid;
@@ -181,14 +189,17 @@ nav, .mobile-nav {
 }
 
 .mobile-nav-menu span {
+    /* layout */
     width: 24px;
     height: 4px;
+    /* color */
     background-color: var(--lilac);
 }
 
 .mobile-nav a { text-decoration: none }
 
 .mobile-nav-links-container {
+    /* layout */
     display: grid;
     grid: 1fr 1fr 1fr / 1fr;
     row-gap: 10px;
@@ -205,19 +216,22 @@ nav, .mobile-nav {
 }
 
 .mobile-nav-btn-container {
+    /* layout */
     display: grid;
     grid: 1fr 1fr / 1fr;
     row-gap: 10px;
     align-items: center;
     justify-self: center;
     grid-column: 1 / 3;
+    /* other */
     transition: 300ms;
 }
 
 .mobile-nav .nav-btn {
-    color: var(--lilac);
-    margin: 0;
+    /* layout */
     margin: auto;
+    /* color */
+    color: var(--lilac);
 }
 
 @media only screen and (max-width: 800px) {
@@ -232,7 +246,12 @@ nav, .mobile-nav {
     .mobile-nav-btn-container { display: none }
 }
 
-/* header */
+
+
+/* ============================= */
+/* =========== header ========== */
+/* ============================= */
+
 header {
     /* layout */
     width: 100%;
@@ -340,7 +359,12 @@ header a:hover:after { width: 0 }
     }
 }
 
-/* main */
+
+
+/* ============================= */
+/* ============ main =========== */
+/* ============================= */
+
 main {
     /* layout */
     width: 100%;
@@ -549,7 +573,12 @@ main a {
     }
 }
 
-/* footer */
+
+
+/* ============================= */
+/* ========== footer =========== */
+/* ============================= */
+
 footer {
     /* layout */
     width: 100%;
