@@ -26,8 +26,26 @@
         </div>
     </nav>
 
+    <div class="mobile-nav">
+        <a href="index.html" class="logo">BlueAir</a>
+        <div class="mobile-nav-menu" onclick="menuClick()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mobile-nav-links-container" onclick="hideMenu()">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#" class="nav-link">Products</a>
+        </div>
+        <div class="mobile-nav-btn-container" onclick="hideMenu()">
+            <a href="#" class="nav-btn" onclick="callBtn()">Call</a>
+            <a href="#order" class="nav-btn">Order</a>
+        </div>
+    </div>
+
     <!-- header -->
-    <header>
+    <header onclick="hideMenu()">
         <div class="header-container">
             <img class="header-img" src="images/header-mountain.jpg" alt="mountains"></img>
             <div class="header-intro">
@@ -42,7 +60,7 @@
     </header>
 
     <!-- main -->
-    <main>
+    <main onclick="hideMenu()">
         <!-- about -->
         <div class="main-container">
             <img class="about-img" src="/images/about-plane.jpg" alt="cargo planes"></img>
@@ -85,7 +103,7 @@
     </main>
 
     <!-- footer -->
-    <footer id="footer">
+    <footer id="footer" onclick="hideMenu()">
         <div class="footer-container">
             <a href="index.html" class="logo">BlueAir</a>
             <ul class="footer-items-container">
