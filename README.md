@@ -1,17 +1,21 @@
-#blue-air-website
+# BlueAir Website - [Link to Website](https://blueair.netlify.app/)
+A website created to expand my knowledge and frontend skills. I focused on user interface (UI) and user experience (UX) design. Hosted by [Netlify](https://www.netlify.com/).
 
-Project Status: active
+## What I Learned
+### 1. UI / UX
+ - Animations and transitions to create a smoother experience
+   - Optimizing animation speeds
+ - Contrast and elevation for better readability
+### 2. JS
+ - `intersection observer`
+   - As user scrolls, opacity of navigation bar changes
+ - Document object model and accessing specific elements
+ - Creating a dynamic web page
 
-Name: BlueAir Website
-
-Author: ytxpk
-
-Intro: A single page website for a mock company that sells air. 
-
-Link: https://yu-xiao-blue-air.netlify.app/
-
-Background: A website created to practice HTML, CSS, and JS and learn new frontend skills. Began in July 2021. I focused on UI UX design for this website by adding animations to improve user experience. 
-
-Features: 
+## Features
+ - Mobile responsive
+ - Collapsed navigation bar on smaller screens
  - Dynamic navbar that changes opacity as the user scrolls through the page
- - Underline animations for buttons and links
+ - Custom animations and transitions
+   - Front page image fades in
+   - Buttons and links have special underline animation
