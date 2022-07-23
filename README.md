@@ -1,5 +1,5 @@
 # BlueAir Website - [Link to Website](https://blueair.netlify.app/)
-A website created to expand my knowledge and frontend skills. I focused on user interface (UI) and user experience (UX) design. Hosted by [Netlify](https://www.netlify.com/).
+A mock website meant for a business that delivers fresh air. Elegance and mobile usability was a focus for this project. Through this project, I enhanced my understanding of UI and UX principles in addition to JS tools such as intersection observer. Hosted by [Netlify](https://www.netlify.com/).
 
 ## What I Learned
 ### 1. UI / UX
@@ -19,3 +19,6 @@ A website created to expand my knowledge and frontend skills. I focused on user 
  - Custom animations and transitions
    - Front page image fades in
    - Buttons and links have special underline animation
+
+---
+© Yu Xiao 2022. All rights reserved.
