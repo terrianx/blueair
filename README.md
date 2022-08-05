@@ -21,4 +21,4 @@ A mock website meant for a business that delivers fresh air. Elegance and mobile
    - Buttons and links have special underline animation
 
 ---
-© Yu Xiao 2022. All rights reserved.
+© Terrian Xiao 2022. All rights reserved.
